@@ -1,29 +1,32 @@
 @import url(https://fonts.googleapis.com/css2?family=Shizuru&display=swap);
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+
 body {
     background: #282a36;
     color: white;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 header{
     padding: 32px;
     border-bottom: 1px solid #333;
     background: rgba(0,0,0,0.1);
+    margin: 0;
+    width: 100vw;
 }
 header div {
     text-align: center;
 }
 header div a {
+    text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 28px;
     margin: 0 16px;
     text-decoration: none;
+    font-family: 'Shizuru', cursive;
 }
 header div a:hover {
     color: #55fa7b;
@@ -32,61 +35,79 @@ header div a:hover {
 
 .wrapper {
     text-align: center;
-    padding: 32px;
+    padding-bottom: 0;
     font-family: 'Shizuru', cursive;
 }
-
+.wrapper h1 {
+    padding: 12px;
+    padding-bottom: 0;
+    margin: 0;
+}
+.wrapper h3 {
+    font-size: 25px;
+}
 .wrapper img {
     border-radius: 200px 50px 10px;
     border: 5px solid #55fa7b;
     margin-bottom: 32px;
+    align-content: center;
 }
 
 .wrapper p {
-    padding: 12px;
+    padding: 32px;
     font-size: larger;
     text-align: justify;
 }
+.wrapper a {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 16px;
+    text-underline-offset: 10px;
+    text-decoration-color: #55fa7b;
+}
+.wrapper a:hover {
+    color: #55fa7b;
+    transition: color 700ms;
+}
 .descrição {
-    padding: 32px;
+    padding: 0;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
 }
-
 .sobre {
-    padding: 32px 0 0 0;
+    padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-.sobre h2 {
-    padding: 12px;
+.sobre h3 {
+    font-size: 25px;
 
 }
 .sobre p {
-    padding-top: 12px;
+    padding-top: 0;
     font-size: larger;
     text-align: center;
 }
 .formação {
-    padding: 32px;
     font-family: 'Times New Roman', Times, serif;
     text-align: justify;
-}
-.formação h3 {
-    padding: 12px;
-
+    padding: 0 32px;
 }
 .formação p {
-    padding-top: 12px;
+    
+    padding:5px 0 0 0;
     font-size: larger;
     text-align: justify;
+    margin: 0;
 }
 .formação a {
-    padding: 0;
     color: white;
     font-size: 18px;
     line-height: 28px;
     margin: 0;
-    text-decoration: none;
+    text-underline-offset: 10px;
+    text-decoration-color: #55fa7b;
 }
 .formação a:hover {
     color: #55fa7b;
@@ -118,17 +139,20 @@ header div a:hover {
     padding-bottom: 12px;
 }
 .certificações {
-    padding: 32px 32px 32px;
+    margin: 0;
+    padding: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
     text-align: justify;
-}
-.certificações h2 {
-    padding-bottom: 12px;
 }
 .certificações a {
     color: white;
     font-size: larger;
-    text-decoration: none;
-    border: 12px;
+    margin-top: 10px;
+    text-underline-offset: 10px;
+    text-decoration-color: #55fa7b;
+    margin: 0;
+    padding-bottom: 15px;
 }
 .certificações a:hover {
     color: #55fa7b;
