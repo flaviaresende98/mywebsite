@@ -4,7 +4,6 @@
  
 <title>Flávia Peixoto</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8"/>
 <!-- CSS Files -->
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -41,8 +40,8 @@
 					</div>				  
  
 					<div class="head-btn wow fadeInLeft">
-						<a href="/index.html" class="btn-primary">Sobre</a>
-						<a href="/curriculo.html" class="btn-default">Currículo</a>
+						<a href="#top" class="btn-primary">Sobre</a>
+						<a href="#experiencia" class="btn-default">Currículo</a>
 					</div>
 	<br/>
 	<br/>
@@ -150,7 +149,47 @@
 		</div>
 	</div>
 </div>
+<div id="experiencia">
+	<div class="container">
+		<div class="text-center">
+			<h2 class="wow fadeInLeft">Experiências Profissionais:</h2>
+			<div class="title-line wow fadeInRight"></div>
+		</div>
+		<div class="row portfolio">
+			
+			<div id="experiencias" >
 
+				<div class="experiencias">
+                    <h3>04/2018 à 08/2018 ( 0 anos e 4 meses) - Ministério da Defesa</h3>
+                    <p1>Estagiário:</p1><p>Infraestrutura em servidores de virtualização da empresa.</p>
+                    <h3>07/2019 à 10/2019 ( 0 anos e 3 meses) - TTI Informática</h3>
+                    <p1>Técnico:</p1><p> Dei suporte ao serviços de implementação de soluções para clientes, tais como
+                    storages, switches, servidores, DDoS. Escolha de soluções para clientes.</p>
+                    <h3>03/2020 à 08/2020 ( 0 anos e 5 meses) - Wiz Soluções</h3>
+                    <p1>Estagiário:</p1><p> Criação de ambientes de desenvolvimento, produção, homologação. Criação de
+                        painel power BI, provisionamento de máquinas virtuais na plataforma Azure, gerenciamento
+                        de tickets no Azure DevOps e criação de scripts de atuomação no Terraform.</p>
+                    <h3>08/2020 à 01/2021 ( 0 anos e 5 meses) - Global WEB</h3>
+                    <p1>Analista de Sistemas Jr:</p1><p> Criação de ambientes de desenvolvimento, produção,
+                        homologação.Criação de containers Docker, Jamcracker, provisionamento de máquinas
+                        virtuais na plataforma Azure, criação de VMs, banco de dados RDS, storages S3 em AWS, e
+                        Azure DevOps.</p>
+                    <h3>05/2021 à 08/2021 - Global Hitss</h3>
+                    <p1>Analista de Sistemas Pleno:</p1><p> Prestava serviços para o complexo de tecnologia do
+                        Bancodo Brasil. Algumas atribuições são: criar arquivos yaml para deployment de
+                        aplicações Kubernetes, usando o ArgoCD. Criação de dashboard e queries no grafana e
+                        prometheus.Gerenciar clusters kubernetes utilizando kubectl. Monitoração dos
+                        clusters.</p>
+                    <h3>08/2021 à atualmente - Avanade</h3>
+                    <p1>Sr Anls, Cloud Engineering:</p1><p> Administração de recursos no ambiente Azure do Banco
+                        NEXT, realizando manutenção do Gateway API utilizando CA Gateway, administração dos clusters
+                        Kubernetes.</p>
+                </div>
+				
+			</div>
+		</div>
+	</div>
+</div>
 
 <div id="contact">
 	<div class="contact fullscreen parallax" style="background-image:url('images/bg2.jpg');" data-img-width="2000" data-img-height="1334" data-diff="100">
@@ -174,13 +213,13 @@
 					<div class="col-sm-7 contact-right">
 						<form method="POST" id="contact-form" class="form-horizontal" action="contactengine.php" onSubmit="alert('Obrigada pela proposta!');">
 							<div class="form-group">
-							<input type="text" name="Name" id="Name" class="form-control wow fadeInUp" placeholder="Nome" required/>
+							<input type="text" name="Name" id=$Name class="form-control wow fadeInUp" placeholder="Name" required/>
 							</div>
 							<div class="form-group">
-							<input type="text" name="Email" id="Email" class="form-control wow fadeInUp" placeholder="Email" required/>
+							<input type="text" name="Email" id=$Email class="form-control wow fadeInUp" placeholder="Email" required/>
 							</div>					
 							<div class="form-group">
-							<textarea name="Message" rows="20" cols="20" id="Message" class="form-control input-message wow fadeInUp"  placeholder="Mensagem" required></textarea>
+							<textarea name="Message" rows="20" cols="20" id=$Message class="form-control input-message wow fadeInUp"  placeholder="Message" required></textarea>
 							</div>
 							<div class="form-group">
 							<input type="submit" name="submit" value="Enviar" class="btn btn-success wow fadeInUp" />
@@ -192,6 +231,8 @@
 		</div>
 	</div>
 </div>  
+
+
 	
 	<!-- javascript files -->
     <script src="js/jquery.js"></script>

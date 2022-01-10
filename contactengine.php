@@ -1,8 +1,8 @@
 <?php
 
-$EmailFrom = "admin@yoursite.com";
-$EmailTo = "your@yoursite.com";
-$Subject = "Message from your site";
+$EmailFrom = $_REQUEST['Email'];
+$EmailTo = "fr.peixoto@outlook.com";
+$Subject = $_REQUEST['Message'];
 $Name = Trim(stripslashes($_POST['Name'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 
 $Message = Trim(stripslashes($_POST['Message'])); 
