@@ -1,27 +1,22 @@
 <?php
+ $nome = $_POST['nome'];
+ $email = $_POST['email']; 
+ $mensagem = $_POST['mensagem'];
+  
+ $email_remetente = "fr.peixoto@outlook.com"; 
+ $email_destinatario = "fr.peixoto@outlook.com"; 
+ $email_reply = "$email"; 
+ $email_assunto = "Contato formmail"; // Este será o assunto da mensagem
 
-$EmailFrom = "fr.peixoto@outlook.com";
-$EmailTo = "fr.peixoto@outlook.com";
-$Name = $_POST['Name']; 
-$Email = $_POST['Email']; 
-$Message = $_POST['Message']; 
 
+ $email_conteudo = "Nome = $nome \n"; 
+ $email_conteudo .= "Email = $email \n"; 
+ $email_conteudo .= "Mensagem = $mensagem \n"; 
 
-// prepare email body text
-$Body = "";
-$Body .= "Name: ";
-$Body .= $Name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $Email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $Message;
-$Body .= "\n";
+ $email_headers = implode ( "\n",array ( "From: $email_remetente", "Reply-To: $email_reply", "Return-Path: $email_remetente","MIME-Version: 1.0","X-Priority: 3","Content-Type: text/html; charset=UTF-8" ) );
+ 
 
-// send email 
-// redirect to success page 
-if (mail($EmailTo, $Subject, $Body, $EmailFrom)){
+if (mail ($email_destinatario, $email_assunto, nl2br($email_conteudo), $email_headers)){ 
   print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.html\">";
 }
 else{
