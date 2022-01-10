@@ -1,5 +1,6 @@
 <?php
 
+$EmailFrom = "fr.peixoto@outlook.com";
 $EmailTo = "fr.peixoto@outlook.com";
 $Name = $_POST['Name']; 
 $Email = $_POST['Email']; 
@@ -20,7 +21,7 @@ $Body .= "\n";
 
 // send email 
 // redirect to success page 
-if (mail($EmailTo, $Message, $Body, $Email)){
+if (mail($EmailTo, $Subject, $Body, $EmailFrom)){
   print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.html\">";
 }
 else{
