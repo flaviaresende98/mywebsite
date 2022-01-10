@@ -1,18 +1,10 @@
 <?php
 
-$EmailFrom = $_REQUEST['Email'];
 $EmailTo = "fr.peixoto@outlook.com";
-$Subject = $_REQUEST['Message'];
-$Name = Trim(stripslashes($_POST['Name'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
-$Message = Trim(stripslashes($_POST['Message'])); 
+$Name = $_POST['Name']; 
+$Email = $_POST['Email']; 
+$Message = $_POST['Message']; 
 
-// validation
-$validationOK=true;
-if (!$validationOK) {
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
-  exit;
-}
 
 // prepare email body text
 $Body = "";
@@ -27,11 +19,9 @@ $Body .= $Message;
 $Body .= "\n";
 
 // send email 
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
-
 // redirect to success page 
-if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
+if (mail($EmailTo, $Message, $Body, $Email)){
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.html\">";
 }
 else{
   print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
