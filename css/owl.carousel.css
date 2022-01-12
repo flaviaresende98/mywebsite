@@ -6,11 +6,11 @@
 /* clearfix */
 .owl-carousel .owl-wrapper:after {
 	content: ".";
-	display: block;
+	display: flex;
 	clear: both;
 	visibility: hidden;
 	line-height: 0;
-	height: 0;
+	height: auto;
 }
 /* display none until init */
 .owl-carousel{

@@ -16,10 +16,9 @@
         });
     });
 
-/* scrollspy  
+/* scrollspy 
 ----------------------------------------------*/
 $('body').scrollspy({ target: '#navbar-scroll' })
-$('body').scrollspy({target: '#container'})
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
