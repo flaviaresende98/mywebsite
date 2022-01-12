@@ -362,6 +362,7 @@ a:hover {
 	text-align: justify;
 }
 .portfolio {
+	align-content: center;
     padding-top: 50px;
     padding-bottom: 100px;
 }
