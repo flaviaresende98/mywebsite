@@ -75,6 +75,9 @@ a:hover {
 	position: relative;
 	padding-bottom: 1px;
 }
+#apresentação {
+	color: white;
+}
 .navbar-default {
 	background: #df4a43;
 	padding: 20px 0;
