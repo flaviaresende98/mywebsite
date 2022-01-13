@@ -686,6 +686,14 @@ padding:100px 0;
 	width: 100%;
 	min-height: 100%;
 }
+#contact img {
+	width: 350px;
+	margin: 12px;
+	position: relative;
+	border: solid 5px #DF4A43;
+	border-radius: 50%;
+
+}
 #contact  h2{
 	color: white;
 }
@@ -714,6 +722,7 @@ padding:100px 0;
 }
 .contact-row {
 	margin: 100px 0 100px;
+	text-align: center;
 }
 #contact-form {
 	margin: 0 auto;
@@ -885,6 +894,10 @@ and (orientation : landscape) {
 	#client img {
 		margin: 10px 0 10px;
 	}	
+	#contact img {
+		width: 200px;
+		margin: 10px 0 10px;
+	}
 }	
 /* iPhone 6Plus (landscape) ----------- */
 @media (max-width: 736px) {
