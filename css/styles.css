@@ -692,6 +692,9 @@ padding:100px 0;
 .ul-address a {
 	font-weight: normal;
 }
+.ul-address a1{
+	color: white;
+}
 .ul-address a:hover {
 	color: white;
 }
