@@ -897,6 +897,9 @@ and (orientation : landscape) {
 	#contact img {
 		width: 200px;
 		margin: 10px 0 10px;
+		position: relative;
+		border: solid 5px #DF4A43;
+		border-radius: 50%;
 	}
 }	
 /* iPhone 6Plus (landscape) ----------- */
